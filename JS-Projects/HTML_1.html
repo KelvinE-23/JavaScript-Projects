@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="./Javascript/Javascript_1" defer></script>
+    </head>
+    <body>
+        <h1>What is your favorite color?</h1>
+            <h3>Pick your favorite color from this list:</h3>
+                <ul>
+                    <li>Red</li>
+                    <li>Yellow</li>
+                    <li>Green</li>
+                    <li>Blue</li>
+                    <li>Pink</li>
+                    <li>Purple</li>
+                </ul>
+            <h3>Enter your choice below:</h3>
+            <input id="Color_Input" type="text">
+            <button onclick="Color_Function()">Submit Color</button>
+            <p id="Output"></p>
+            <br>
+            <h2 class="className" onclick="myClass()">Click Me!</h2>
+            <canvas id="canva" width="500" height="250" style="border: 1px solid black;"></canvas>
+            <script>
+                var c = document.getElementById("canva");
+                var ctx = c.getContext("2d");
+                ctx.moveTo(0, 0);
+                ctx.lineTo(500, 250);
+                ctx.stroke();
+                var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                grd.addColorStop(0, "green");
+                grd.addColorStop(1, "purple");
+
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(10, 10, 475, 80);
+            </script>
+    </body>
+</html>

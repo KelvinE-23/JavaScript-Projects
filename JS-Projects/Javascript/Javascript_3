@@ -1,0 +1,12 @@
+function displayInfo(element) {
+
+    // Get custom data attribute
+    var era = element.getAttribute("data-era");
+
+    // Get the text content of the clicked item
+    var name = element.innerHTML;
+
+    // Display result
+    document.getElementById("message").innerHTML =
+        name + " was famous in the " + era + ".";
+}
