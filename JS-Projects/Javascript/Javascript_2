@@ -1,0 +1,17 @@
+function validateForm() {
+  let x = document.forms["form1"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  let y= document.forms["form1"]["email"].value;
+  if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  let z = document.forms["form1"]["message"].value;
+  if (z == "") {
+    alert("Message must be filled out");
+    return false;
+  }
+}

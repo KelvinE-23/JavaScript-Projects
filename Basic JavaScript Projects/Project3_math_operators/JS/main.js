@@ -31,6 +31,7 @@ y--;
 document.getElementById("decr").innerHTML= "5.25 minus one equals: " + y;
 }
 
+// alert that utilizes Math.round and .random functions //
 window.alert(Math.round(Math.random() *100));
 
 

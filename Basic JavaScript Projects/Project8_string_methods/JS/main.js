@@ -62,7 +62,7 @@ function fixed_method() {
 // Using valueOf()
 function value_method() {
     var numberObject = new Number(25);
-    numberObject=189450;
+    
     // Returns the primitive number value
     var result = numberObject.valueOf();
 
