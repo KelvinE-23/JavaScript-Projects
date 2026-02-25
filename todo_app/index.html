@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kelvin's ToDo App</title>
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+
+    <div class="main">
+        <input id="task" placeholder="Enter a task...">
+        <button id="add">Add Item</button>
+        <hr>
+        <div id="todos"></div>
+    </div>
+
+    <footer>
+        <p>Kelvin Essilfie | Kelvin's ToDo App | © 2026</p>
+        <p id="date"></p>
+    </footer>
+
+    <script src="js/todo.js"></script>
+
+    <script>
+        document.getElementById("date").innerText =
+            "Today's Date: " + new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="XML_Example"></p>
+
+<script>
+var XML_Parser, XML_Document;
+
+// creates a text string
+var Player = "<player>" +
+"<name>Michael Jordan</name>" +
+"<team>Chicago Bulls</team>" +
+"<position>Shooting Guard</position>" +
+"<championships>6</championships>" +
+"</player>";
+
+// creates an XML DOM parser
+XML_Parser = new DOMParser();
+
+// creates a new XML DOM object using the text string
+XML_Document = XML_Parser.parseFromString(Player, "text/xml");
+
+// display the player's name
+document.getElementById("XML_Example").innerHTML =
+XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+</script>
+
+</body>
+</html>
